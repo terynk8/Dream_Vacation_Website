@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	 	<link rel="stylesheet" type="text/css" href="style2.css">
+	</head>
+
+	<body bgcolor="#ccffff">
+		<!--BEGIN NAVIGATION BAR-->
+		 
+			<ul id="navbar">
+				<li class="navitem"><a href="Dream_Vacation.html">Home</a></li>
+				<li class="navitem"><a class="active" href="Hawaii.html">Hawaii</a></li>
+				<li class="navitem"><a href="Japan.html">Japan</a></li>
+				<li class="navitem"><a href="China.html">China</a></li>
+				<li class="navitem"><a href="Europe.html">Europe</a></li>
+				<li class="navitem"><a href="Australia.html">Australia</a></li>
+			</ul>
+		<!--END NAVIGATIONBAR-->
+		<h1>Hawaii</h1>
+<div id="map" style="width:100%;height:500px"></div>
+
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(21.275574, -157.825313);
+  // myCenter is a latitude/Longitude object. It stores a point.//
+  var mapCanvas = document.getElementById("map");
+  //stores the link to the div that the map will go in//
+  var mapOptions = {center: myCenter, zoom: 19, mapTypeId:google.maps.MapTypeId.SATELLITE};
+  //stores the options for the map; note we used my Center the variable storing the point in the center option.//
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  //creates the map itself. WE gave it the variables for the mapCanvas (where to put it) and mapOptions (what it looks like)//
+  var marker = new google.maps.Marker({position:myCenter});
+  //creates a new marker at the myCenter location (we used the myCenter variable again)//
+  marker.setMap(map);
+  //follows object.method notation. the marker is the object. it's being told to set its map to the map we created two lines up
+  //this puts the marker on the map//
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=
+AIzaSyCek05-xLWY2uiRXV08nKNhYD9mXBpEhsY&callback=myMap"></script>
+
+<h2><font size= "6">Oahu</font></h2>
+
+<img src="http://www.aloha-hawaii.com/wp-content/uploads/2009/11/diamond-head.jpg" width= 350px height= 200px align= "right"
+hspace="20">
+<p><font size ="4.5">
+Hawaii is known world wide for its beauty and as some call it, paradise. One of the known attractions on the island of Oahu is 
+the Duke Kahanamoku Statue located on Kalakaua Ave by Waikiki Beach. Duke was born on August 24, 1890 and was a famous Olympian
+/Surfer/Swimmer. He competed in the 1912 and 1920 Olympics bringing home the gold medal to the USA both times. Another attraction
+down the street is the Honolulu Zoo and Aquarium. A popular tourist attraction is the Pearl Harbor Tour. In this tour you can
+see and go on the actual submarines/ships that were apart of the Attack of Pearl Harbor. This is an all day event that you wouldn't
+want to miss. Diamond head is another site you wouldn't want to miss. Tourists take a 4/5 of a mile (1.6 miles round trip) up a
+dormant volcano to an amazing view of the crater and the island. Oahu is also home of the Largest Open Air Shopping Center called
+Ala Moana. This shopping center has over 150 different stores and covers 1,351,000 square feet. One way of transportation is the
+Waikiki Trolley which works just like the Gold Line we have in South Pasadena. This takes people all over to the Diamond Head Hike,
+Swap Meet, and local places in the city of Waikiki.
+</font>
+</p>
+<h2><font size="6">Big Island</font></h2>
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Mauna_Kea_observatory.jpg" width= 350px height=200px align="left"
+hspace="20">
+<p><font size="4.5">
+The Big Island also known as Hawaii has many other interesting attractions. One main thing the Big Island is known for is it snows
+at the very top of Mauna Kea mountain. Another fun fact is that there is still active lava flow on the island. There are two sides
+to the island, the Hilo side which is usually rainy and humid but a beautiful sight when it clears. The other side is the Kona
+side. On both sides there are beautiful beaches, even black sand beaches. There are market places such as Kings and Queens village
+on the Kona side. Also there is a cultural festival that occurs every year around August. Here people come together to help express 
+Hawaii's culture and get others interested all for free. Activities can be from gourd making to basket weaving with palm frons. 
+The Hilo side of Hawaii is more known for its scenery since it rains constantly. There is so much green land because of the rain.
+There's also beautiful beaches on the Hilo side as well. 
+</font>
+</p>
+<h2><font size="6">Maui</font></h2>
+<img src="http://www.polyadhawaiitours.com/maui/images/5074123.jpg"width=400px height=300px align="right" hspace="20">
+<p><font size="4.5">
+Maui is a beautiful island filled with white, black, and red sand beaches. The island is home to the Haleakala Volcano and bike 
+path. The crater to this volcano is 21 miles across and 4,000 feet deep. This is the worlds largest dormant volcano. Another famous
+attraction in Maui is the Road to Hana. This is a winding path all the way up Haleakala, a 45 mile trip to see beautiful sights.
+Every year Maui has a swap meet. This is a place where people come together to sell their products to tourists. Products can range
+from hand carved wood work to cell phone cases. It's a good way to experience a little bit of their culture and shop as well. A 
+popular town on Maui is Lahaina, this is a historic town transformed into a shopping alley. Here there are restaurants, shops,
+art galleries, and even night clubs. A fun attraction to see if you are going to Hawaii between December and May is whale watching.
+Maui is known as one of the worlds best places to whale watch.
+</font>
+</p>
+<img src="http://www.temptationtours.com/wp-content/uploads/2015/08/v87_ge_4.jpg" width= 450px height=250px align="left" 
+hspace="20">
+
+<h5>Images</h5>
+<p><br>
+http://www.aloha-hawaii.com/wp-content/uploads/2009/11/diamond-head.jpg
+</br>
+<br>
+https://upload.wikimedia.org/wikipedia/commons/1/18/Mauna_Kea_observatory.jpg
+</br>
+<br>
+http://www.polyadhawaiitours.com/maui/images/5074123.jpg
+</br>
+<br>
+http://www.temptationtours.com/wp-content/uploads/2015/08/v87_ge_4.jpg
+</br>
+</body>
+</html>

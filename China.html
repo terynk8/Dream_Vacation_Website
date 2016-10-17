@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	 	<link rel="stylesheet" type="text/css" href="style2.css">
+	</head>
+
+	<body bgcolor="#ffffb3">
+		<!--BEGIN NAVIGATION BAR-->
+		 
+			<ul id="navbar">
+				<li class="navitem"><a href="Dream_Vacation.html">Home</a></li>
+				<li class="navitem"><a href="Hawaii.html">Hawaii</a></li>
+				<li class="navitem"><a href="Japan.html">Japan</a></li>
+				<li class="navitem"><a class="active" href="China.html">China</a></li>
+				<li class="navitem"><a href="Europe.html">Europe</a></li>
+				<li class="navitem"><a href="Australia.html">Australia</a></li>
+			</ul>
+		<!--END NAVIGATIONBAR-->
+		<h1>China</h1>
+<div id="map" style="width:100%;height:500px"></div>
+
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(31.145420, 121.657269);
+  // myCenter is a latitude/Longitude object. It stores a point.//
+  var mapCanvas = document.getElementById("map");
+  //stores the link to the div that the map will go in//
+  var mapOptions = {center: myCenter, zoom: 15, mapTypeId:google.maps.MapTypeId.SATELLITE};
+  //stores the options for the map; note we used my Center the variable storing the point in the center option.//
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  //creates the map itself. WE gave it the variables for the mapCanvas (where to put it) and mapOptions (what it looks like)//
+  var marker = new google.maps.Marker({position:myCenter});
+  //creates a new marker at the myCenter location (we used the myCenter variable again)//
+  marker.setMap(map);
+  //follows object.method notation. the marker is the object. it's being told to set its map to the map we created two lines up
+  //this puts the marker on the map//
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=
+AIzaSyCek05-xLWY2uiRXV08nKNhYD9mXBpEhsY&callback=myMap"></script>
+
+<h2><font size="6">Beijing</font></h2>
+
+<img src="http://foundtheworld.com/wp-content/uploads/2014/10/Great-Wall-of-China-23.jpg" height=300px width=500px hspace="20"
+align="right">
+
+<p><font size="4.5">
+One city I would want to see in China is Beijing is Guangzhou because that's where I was born. Another city I would want to
+visit Beijing. In Beijing I would definitely would want to see the Great Wall of China. This is a famous landmark built in 
+c. 206 BC. In all its 13,170.7 miles. The Great Wall was built in order to protect Silk Road trade and prevent invasion. 
+It has watchtowers for defense for the military to keep a look out for invasions. Sadly today 30 percent of the original wall
+is gone. Another place I'd want to visit is the Forbidden City. This city was built in 1420 originally home to 24 emperors during
+the Ming and Qing Dynasties. Chinese astronomers believed that the Purple Star (Polaris) was the center of heaven and their
+emperor lived in the purple palace. All outsiders were forbidden to enter unless special permission hence the name The Purple
+Forbidden City. I would also like to see the Temple of Heaven. Every year at the winter solsist, emperors would come and pray 
+in the temple for good harvest. 
+</font>
+</p>
+
+<h2 align="center"><font size="6">Shanghai</font></h2>
+
+<img src="https://secure.cdn2.wdpromedia.cn/resize/mwImage/1/900/360/75/wdpromedia.disney.go.com/media/wdpro-shdr-assets/prod/en-cn/system/images/shdr-theme-park-shanghai-disneyland-park-hero-full-new.jpg"
+height= 300px width=550px hspace="20" align="left">
+
+<p><font size="4.5">
+One place in Shanghai I would definitely want to go is Shanghai Disneyland. I've been to Disneyland in California and I would
+want to see the differences between the two. In fact this was opened this year on June 16, 2016. Another place I'd want to go 
+is the Oriental Pearl Tower. It's the third tallest tower in the world and is 468 meters high. This was made for essentially
+communication but now also serves as a viewing place of the city. The TV tower has three viewing platforms at 90 meter, 263
+meters, and 350 meters. I would also want to see the Yu Gardens in Shanghai as well. These gardens were built in 1559 during
+the Ming Dynasty. It occupies 5 acres and was built by Pan Yunduan to comfort his father who was elderly at the time. 
+</font>
+</p>
+
+<h2><font size="6">Other Places</font></h2>
+<p><font size="4.5">
+Some other places I want to go to is the Red Sand Beach in Panjin China (left). This in fact doesn't even have real sand but has 
+sea weed called Sueda. It starts growing in April and May and is at first green. However when fall comes around it turns a 
+vibrant red. This is the biggest land marsh in the world. Another place I'd want to go is the Rainbow Mountains at Zhangye 
+Danxia National Park (right). These mountains were formed by the erosion of red sand stone. The best time to take pictures and visit
+is in the Morning or Afternoon when the colors change continuously. 
+</font>
+</p>
+<img src="https://alexverschuere.files.wordpress.com/2013/11/red-beach-panjin-china-1.jpg" height=300px width=500px hspace="20"
+align="left">
+<img src="http://i.huffpost.com/gen/1274350/images/o-RAINBOW-MOUNTAINS-facebook.jpg" height=300px width=500px hspace="20"
+align="right">
+
+<h5>Images</h5>
+<p><br>
+http://foundtheworld.com/wp-content/uploads/2014/10/Great-Wall-of-China-23.jpg
+</br>
+<br>
+https://secure.cdn2.wdpromedia.cn/resize/mwImage/1/900/360/75/wdpromedia.disney.go.com/media/wdpro-shdr-assets/prod/en-cn/system/images/shdr-theme-park-shanghai-disneyland-park-hero-full-new.jpg
+</br>
+<br>
+https://alexverschuere.files.wordpress.com/2013/11/red-beach-panjin-china-1.jpg
+</br>
+<br>
+http://i.huffpost.com/gen/1274350/images/o-RAINBOW-MOUNTAINS-facebook.jpg
+</br>
+</body>
+</html>

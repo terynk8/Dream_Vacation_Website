@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	 	<link rel="stylesheet" type="text/css" href="style2.css">
+	</head>
+
+	<body bgcolor="#ffcce6">
+		<!--BEGIN NAVIGATION BAR-->
+		 
+			<ul id="navbar">
+				<li class="navitem"><a href="Dream_Vacation.html">Home</a></li>
+				<li class="navitem"><a href="Hawaii.html">Hawaii</a></li>
+				<li class="navitem"><a class="active" href="Japan.html">Japan</a></li>
+				<li class="navitem"><a href="China.html">China</a></li>
+				<li class="navitem"><a href="Europe.html">Europe</a></li>
+				<li class="navitem"><a href="Australia.html">Australia</a></li>
+			</ul>
+		<!--END NAVIGATIONBAR-->
+		<h1>Japan</h1>
+<div id="map" style="width:100%;height:500px"></div>
+
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(35.658684, 139.745443);
+  // myCenter is a latitude/Longitude object. It stores a point.//
+  var mapCanvas = document.getElementById("map");
+  //stores the link to the div that the map will go in//
+  var mapOptions = {center: myCenter, zoom: 18,mapTypeId:google.maps.MapTypeId.SATELLITE};
+  //stores the options for the map; note we used my Center the variable storing the point in the center option.//
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  //creates the map itself. WE gave it the variables for the mapCanvas (where to put it) and mapOptions (what it looks like)//
+  var marker = new google.maps.Marker({position:myCenter});
+  //creates a new marker at the myCenter location (we used the myCenter variable again)//
+  marker.setMap(map);
+  //follows object.method notation. the marker is the object. it's being told to set its map to the map we created two lines up
+  //this puts the marker on the map//
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=
+AIzaSyCek05-xLWY2uiRXV08nKNhYD9mXBpEhsY&callback=myMap"></script>
+
+<h2><font size="6">Tokyo</font></h2>
+
+<img src="https://i.ytimg.com/vi/ocsfthG3HaE/maxresdefault.jpg" height=350px width= 500px hspace="20" align="right">
+
+<p><font size="4.5">
+One of the things I'd want to see when I go to Japan would be Mount Fuji. This is an active volcano in Japan that is
+located on Honshu Island. Its 12,388 feet high and a beautiful sight to see. I've wanted to go to Japan because of all
+the cute things they sell and all of the sites to see. Another place I'd want to see is the Tokyo Tower. This is the 
+second tallest building in Japan. It opened in 1958 and stands 1,092 feet tall. Also, I'm interested in seeing the Cherry
+Blossoms which can bloom in January all the way to March depending on which part of Japan you are visiting. I'm interested
+in the culture and different authentic foods they have. I've always wanted to try authentic Japanese cuisine and compare it 
+to the Japanese food in America. Another thing I'd want to see in the city of Tokyo is all the people dressed up as
+Harajuku girls on the streets. The Tokyo Imperial Palace is a place I would also want to see. The total area of it is 3.41
+square kilometers including the beautiful gardens. 
+</p>
+<h2><font size="6">Kyoto</font></h2>
+
+<img src="http://www.fourseasons.com/content/dam/fourseasons/images/web/KYO/KYO_041_1280x486.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+height=250px width= 500px hspace="20" align="left">
+<p>
+Kyoto was once the capital of Japan, however currently it is Tokyo. Kyoto is a city on the island of Honshu. I want to go to
+Kyoto to see all of the Temples and Shrines. It is known for its Buddhist temples and pretty gardens. One temple I would want
+to see is the Kinkaku-Ji temple, or known as the gold colored temple. This temple was built in 1393 for a guy named Shogun
+Yoshimitsu Ashikaga. However the original was burned down many times in the Onin War. Another temple I would want to see is
+the Nijo Castle. This is a wooden castle with beautiful gardens built in 1601. 
+</font>
+</p>
+
+<h5>Images</h5>
+<p><br>
+https://i.ytimg.com/vi/ocsfthG3HaE/maxresdefault.jpg
+</br>
+<br>
+http://www.fourseasons.com/content/dam/fourseasons/images/web/KYO/KYO_041_1280x486.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg
+</br>
+</body>
+</html>

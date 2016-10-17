@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	 	<link rel="stylesheet" type="text/css" href="style2.css">
+	</head>
+
+	<body bgcolor="#c6ffb3">
+		<!--BEGIN NAVIGATION BAR-->
+		 
+			<ul id="navbar">
+				<li class="navitem"><a href="Dream_Vacation.html">Home</a></li>
+				<li class="navitem"><a href="Hawaii.html">Hawaii</a></li>
+				<li class="navitem"><a href="Japan.html">Japan</a></li>
+				<li class="navitem"><a href="China.html">China</a></li>
+				<li class="navitem"><a href="Europe.html">Europe</a></li>
+				<li class="navitem"><a class="active" href="Australia.html">Australia</a></li>
+			</ul>
+		<!--END NAVIGATIONBAR-->
+		<h1>Australia</h1>
+<div id="map2" style="width:100%;height:500px"></div>
+
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(-33.856571, 151.215286);
+  // myCenter is a latitude/Longitude object. It stores a point.//
+  var mapCanvas = document.getElementById("map2");
+  //stores the link to the div that the map will go in//
+  var mapOptions = {center: myCenter, zoom: 18,mapTypeId:google.maps.MapTypeId.SATELLITE};
+  //stores the options for the map; note we used my Center the variable storing the point in the center option.//
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  //creates the map itself. WE gave it the variables for the mapCanvas (where to put it) and mapOptions (what it looks like)//
+  var marker = new google.maps.Marker({position:myCenter});
+  //creates a new marker at the myCenter location (we used the myCenter variable again)//
+  marker.setMap(map);
+  //follows object.method notation. the marker is the object. it's being told to set its map to the map we created two lines up
+  //this puts the marker on the map//
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=
+AIzaSyCek05-xLWY2uiRXV08nKNhYD9mXBpEhsY&callback=myMap"></script>
+
+<h2><font size="6">Sydney</font></h2>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Sydney_Opera_House_Sails.jpg" height=500px width=700px hspace="20"
+align="center">
+
+<p><font size="4.5">
+I want to visit the Sydney Opera House because it is a famous landmark in Australia. In 6th grade I had learned a little bit about 
+it and thought it would be neat to see it in real life. Here I can watch a play which also would be very interested in.
+</font>
+</p>
+
+<img src="http://www.therussell.com.au/wp-content/uploads/2016/03/The-Rocks-Google-Image.jpg" height=500px width=700px 
+hspace="20" align="center">
+
+<p><font size="4.5">
+I am interested in seeing The Rocks. This is a historical and shopping center combined and is famous in the city of Sydney. Here
+I would want to learn about the History of Australia and experience the culture. 
+</font>
+</p>
+
+<img src="http://dao27ppzr58tl.cloudfront.net/wp-content/uploads/2014/05/bridgeclimb_thebridge-1024x509.jpg" height=500px
+width=700px hspace="20" align="center">
+
+<p><font size="4.5">
+Another site I would want to see is the Sydney Harbour Bridge because it also is another famous site that's a must see when you're
+in Sydney. This is a steel bridge that carries traffic between Sydney and the North Shore.
+</font>
+</p>
+
+<h2><font size="6">Other Places</font></h2>
+
+<img src="http://www.sbs.com.au/news/sites/sbs.com.au.news/files/e832c18e-21ff-476a-b814-f5e96b52cabd.jpeg" height=500px 
+width=700px hspace="20" align="center">
+
+<p><font size="4.5">
+The Great Barrier Reef is beautiful place in Australia that I would want to visit because I learned about it through a biome project
+and thought it would be neat to see in real life. The reef is the largest coral reef in the world and is made up of over 2,900
+individual reefs. There is about 2,100 different kinds of species currently living in the Great Barrier Reef and scientists
+are stil discovering more. 
+</font>
+</p>
+
+<img src="http://nunnery.com.au/wp-content/uploads/2016/04/image.adapt_.1663.medium.jpg" height=500px width=700px hspace="20"
+align="center">
+
+<p><font size="4.5">
+I want to visit the Great Ocean Road because it looks like a really pretty site to see and you might get a chance to see some
+koalas and kangaroos on the way. The entire length of the road is 151 miles. Also along the path you can see other great sites
+such as the collapse of the London Bridge and the 12 Apostles.
+</font>
+<h5>Images</h5>
+<p><br>
+https://upload.wikimedia.org/wikipedia/commons/4/40/Sydney_Opera_House_Sails.jpg
+</br>
+<br>
+http://www.therussell.com.au/wp-content/uploads/2016/03/The-Rocks-Google-Image.jpg
+</br>
+<br>
+http://dao27ppzr58tl.cloudfront.net/wp-content/uploads/2014/05/bridgeclimb_thebridge-1024x509.jpg
+</br>
+<br>
+http://www.sbs.com.au/news/sites/sbs.com.au.news/files/e832c18e-21ff-476a-b814-f5e96b52cabd.jpeg
+</br>
+<br>
+http://nunnery.com.au/wp-content/uploads/2016/04/image.adapt_.1663.medium.jpg
+</br>
+</p>
+</body>
+</html>

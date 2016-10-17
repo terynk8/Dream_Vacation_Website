@@ -1,0 +1,48 @@
+h1 { padding:20px 10px 10px;
+}
+
+#navbar {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	background-color:black;
+	position: fixed;
+	overflow: auto;
+	top:0px;
+}
+
+li {
+	display:inline;
+	border: 1px solid magenta;
+	float:left;
+}
+
+.navitem a.active {
+	background-color: #d9d9d9;
+}
+
+.navitem a {
+	color:red;
+	text-decoration:none;
+	padding: 8px 16px;
+}
+
+li a {
+	display:inline-block;
+	text-decoration: none;
+	color: red;
+	text-align:center;
+	padding:8px 12px;
+	background-color: black;
+}
+
+li a:hover {
+	background-color: gray;
+}
+div#map2 {
+ -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Safari */
+    transform: rotate(180deg); /* Standard syntax */
+}
+
+

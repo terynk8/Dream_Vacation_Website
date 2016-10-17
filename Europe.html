@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	 	<link rel="stylesheet" type="text/css" href="style2.css">
+	</head>
+
+	<body bgcolor="#ffb380">
+		<!--BEGIN NAVIGATION BAR-->
+		 
+			<ul id="navbar">
+				<li class="navitem"><a href="Dream_Vacation.html">Home</a></li>
+				<li class="navitem"><a href="Hawaii.html">Hawaii</a></li>
+				<li class="navitem"><a href="Japan.html">Japan</a></li>
+				<li class="navitem"><a href="China.html">China</a></li>
+				<li class="navitem"><a class="active" href="Europe.html">Europe</a></li>
+				<li class="navitem"><a href="Australia.html">Australia</a></li>
+			</ul>
+		<!--END NAVIGATIONBAR-->
+		<h1>Europe</h1>
+<div id="map" style="width:100%;height:500px"></div>
+
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(48.858547, 2.294460);
+  // myCenter is a latitude/Longitude object. It stores a point.//
+  var mapCanvas = document.getElementById("map");
+  //stores the link to the div that the map will go in//
+  var mapOptions = {center: myCenter, zoom: 18, mapTypeId:google.maps.MapTypeId.SATELLITE};
+  //stores the options for the map; note we used my Center the variable storing the point in the center option.//
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  //creates the map itself. WE gave it the variables for the mapCanvas (where to put it) and mapOptions (what it looks like)//
+  var marker = new google.maps.Marker({position:myCenter});
+  //creates a new marker at the myCenter location (we used the myCenter variable again)//
+  marker.setMap(map);
+  //follows object.method notation. the marker is the object. it's being told to set its map to the map we created two lines up
+  //this puts the marker on the map//
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=
+AIzaSyCek05-xLWY2uiRXV08nKNhYD9mXBpEhsY&callback=myMap"></script>
+
+<h2><font size="6">Paris</font></h2>
+
+<img src="http://cdn.history.com/sites/2/2015/04/hith-eiffel-tower-iStock_000016468972Large.jpg" height=500px width= 700px 
+hspace="20" align="center">
+
+<p><font size="4.5">
+One landmark in Paris I would want to see is the Eiffel Tower. This is a famous landmark of Paris and is the most visited place
+in the world with 6.89 million people a year. 
+</font>
+</p>
+
+<img src="https://images5.alphacoders.com/594/594362.jpg" height =500px width=700px hspace="20"
+align="center">
+<p><font size="4.5">
+Another place I'd want to visit in Paris is the Louvre Museum because I want to see the different styles of art and how their
+culture is integrated into their art work.
+</font>
+</p>
+
+<img src="http://i.dailymail.co.uk/i/pix/2016/06/11/11/352699B100000578-0-image-a-20_1465640670150.jpg" height=500px width=700px
+hspace="20" align="center">
+
+<p><font size="4.5">
+I would want to go to Disneyland Paris because I would want to go to a Disneyland out of the country and compare food and cultures.
+</font>
+</p>
+
+<h2><font size="6">Italy</font></h2>
+<p><font size="4.5">
+I want to see the Colosseum because it is a famous Roman gladiatorial area. When you think of Rome then you think about this iconic
+landmark.
+</font>
+</p> 
+
+<img src="http://cdn.ngkids.co.uk/dynamic/features_legacy/content/gallery/20141020082417578960802.jpg" height=500px width=700px
+hspace="20" align="center">
+
+<p><font size="4.5">
+Another place in Italy I would want to go is the Sistine Chapel because of all the art work that is painted on the ceiling. 
+</font>
+</p>
+
+<img src="http://www.livescience.com/images/i/000/058/615/i02/last-judgment.jpg?1383108207?interpolation=lanczos-none&downsize=640:*"
+height=500px width=700px hspace="20" align="center">
+
+<p><font size="4.5">
+I would want to visit the Leaning Tower of Pisa because I had wanted to see the leaning tower in real life and to take cool pictures.
+</font>
+</p>
+
+<img src="http://www.unknownworld.co/wp-content/uploads/2014/04/Leaning-Tower-Of-Pisa-2.jpg" height=500px width=700px
+hspace="20" align="center">
+
+<p><font size="4.5">
+One site I would want to see is Mt. Vesuvius because that is the volcano that destroyed the city of Pompeii in 79AD by its
+huge eruption.
+</font>
+</p>
+
+<img src="http://s.hswstatic.com/gif/mount-vesuvius-118385602.jpg" height=500px width=700px hspace="20" align="center">
+<h5>Images</h5>
+<p><br>
+http://cdn.history.com/sites/2/2015/04/hith-eiffel-tower-iStock_000016468972Large.jpg
+</br>
+<br>
+https://images5.alphacoders.com/594/594362.jpg
+</br>
+<br>
+http://i.dailymail.co.uk/i/pix/2016/06/11/11/352699B100000578-0-image-a-20_1465640670150.jpg
+</br>
+<br>
+http://cdn.ngkids.co.uk/dynamic/features_legacy/content/gallery/20141020082417578960802.jpg
+</br>
+<br>
+http://www.livescience.com/images/i/000/058/615/i02/last-judgment.jpg?1383108207?interpolation=lanczos-none&downsize=640:*
+</br>
+<br>
+http://www.unknownworld.co/wp-content/uploads/2014/04/Leaning-Tower-Of-Pisa-2.jpg
+</br>
+<br>
+http://s.hswstatic.com/gif/mount-vesuvius-118385602.jpg
+</br>
+</body>
+</html>
